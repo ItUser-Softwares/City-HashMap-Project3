@@ -1,0 +1,66 @@
+**Hash Function Analysis for City Hash Map Project**
+
+**Overview**
+This document provides an analysis of the three hash functions used in the City Hash Map project. These hash functions are responsible for distributing `City` objects into buckets based on the city name. The effectiveness of a hash function is measured by its ability to evenly distribute data across the hash table and minimize collisions.
+
+**Hash Function 1: Bad Hash**
+
+* **Logic:** Returns the ASCII value of the first character of the city name, modulo the table size.
+
+  ```cpp
+  return (int)key[0] % bucketCount;
+  ```
+* **Analysis:**
+
+  * Very poor distribution.
+  * Many cities share the same starting letter, leading to severe clustering and collisions.
+  * Example: Cities starting with 'S' or 'B' often end up in the same bucket.
+  * **Collision Rate:** High.
+
+**Hash Function 2: Better Hash**
+
+* **Logic:** Computes the sum of ASCII values of all characters in the city name and takes modulo bucket size.
+
+  ```cpp
+  int sum = 0;
+  for (char c : key) sum += c;
+  return sum % bucketCount;
+  ```
+* **Analysis:**
+
+  * Moderate improvement over the bad hash.
+  * Reduces clustering somewhat, but still leads to collisions for cities with similar character totals.
+  * Not fully randomized due to potential overlap in sum values from different city names.
+  * **Collision Rate:** Medium.
+
+**Hash Function 3: Best Hash**
+
+* **Logic:** Implements the djb2 hashing algorithm, which involves bit shifting and addition.
+
+  ```cpp
+  unsigned long hash = 5381;
+  for (char c : key) hash = ((hash << 5) + hash) + c;
+  return hash % bucketCount;
+  ```
+* **Analysis:**
+
+  * Significantly better distribution across buckets.
+  * Uses both character position and value, leading to lower collision rates.
+  * More evenly fills the hash table with minimal clustering.
+  * **Collision Rate:** Low.
+
+**Improvements**
+
+* The first function used only the first character, which ignores most of the string’s entropy.
+* The second one improved by considering the full string but lacked positional weight.
+* The third hash used a proven algorithm (djb2), known for better randomness and distribution.
+
+**Credit & Methodology**
+
+* The bad and better hash functions were devised independently.
+* The best hash function (djb2) is a known algorithm by Daniel J. Bernstein.
+* This analysis was assisted using AI to structure and explain concepts.
+* AI Prompt: “Create a djb2 hash function for strings in C++ and compare hash functions for collision rates.”
+
+**Conclusion**
+A good hash function greatly improves the performance and usability of a hash table. The djb2-based hash clearly outperforms the others in terms of even distribution and fewer collisions, proving its value in practical applications such as this city map project.

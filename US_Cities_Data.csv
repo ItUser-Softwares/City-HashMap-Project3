@@ -1,0 +1,52 @@
+City Name,State ID,State Name,County Name,Population,Land Area (sq mi)
+Birmingham,AL,Alabama,Jefferson,200733,146.07
+Anchorage,AK,Alaska,Anchorage,288121,1706
+Phoenix,AZ,Arizona,Maricopa,1680992,517.6
+Little Rock,AR,Arkansas,Pulaski,202591,122.3
+Los Angeles,CA,California,Los Angeles,3898747,469.5
+Denver,CO,Colorado,Denver,715522,154.7
+Bridgeport,CT,Connecticut,Fairfield,148654,16.1
+Wilmington,DE,Delaware,New Castle,70935,16.9
+Miami,FL,Florida,Miami-Dade,439890,55.3
+Atlanta,GA,Georgia,Fulton,498715,134
+Honolulu,HI,Hawaii,Honolulu,345510,68.4
+Boise,ID,Idaho,Ada,235684,85
+Chicago,IL,Illinois,Cook,2670405,227.6
+Indianapolis,IN,Indiana,Marion,887642,361.5
+Des Moines,IA,Iowa,Polk,214133,90.7
+Wichita,KS,Kansas,Sedgwick,397532,159.3
+Louisville,KY,Kentucky,Jefferson,633045,325
+New Orleans,LA,Louisiana,Orleans,376971,169.4
+Portland,ME,Maine,Cumberland,68908,21.3
+Baltimore,MD,Maryland,Baltimore,585708,80.9
+Boston,MA,Massachusetts,Suffolk,675647,48.4
+Detroit,MI,Michigan,Wayne,639111,138.8
+Minneapolis,MN,Minnesota,Hennepin,429606,57.5
+Jackson,MS,Mississippi,Hinds,149761,111.1
+Kansas City,MO,Missouri,Jackson,508394,319
+Billings,MT,Montana,Yellowstone,117445,43.5
+Omaha,NE,Nebraska,Douglas,486051,130.6
+Las Vegas,NV,Nevada,Clark,641903,135.9
+Manchester,NH,New Hampshire,Hillsborough,115644,34.9
+Newark,NJ,New Jersey,Essex,311549,24.2
+Albuquerque,NM,New Mexico,Bernalillo,562599,189.5
+New York,NY,New York,New York,8804190,300.5
+Charlotte,NC,North Carolina,Mecklenburg,897720,308.6
+Fargo,ND,North Dakota,Cass,129643,50
+Columbus,OH,Ohio,Franklin,898143,225.9
+Oklahoma City,OK,Oklahoma,Oklahoma,687725,607
+Portland,OR,Oregon,Multnomah,635067,133.4
+Philadelphia,PA,Pennsylvania,Philadelphia,1576251,134.2
+Providence,RI,Rhode Island,Providence,189563,18.5
+Charleston,SC,South Carolina,Charleston,151612,112
+Sioux Falls,SD,South Dakota,Minnehaha,202078,78
+Nashville,TN,Tennessee,Davidson,715884,475
+Houston,TX,Texas,Harris,2312713,637.5
+Salt Lake City,UT,Utah,Salt Lake,199723,110.4
+Burlington,VT,Vermont,Chittenden,44495,15.5
+Virginia Beach,VA,Virginia,Virginia Beach,457672,248.3
+Seattle,WA,Washington,King,733919,142.5
+Charleston,WV,West Virginia,Kanawha,48196,31.6
+Milwaukee,WI,Wisconsin,Milwaukee,569330,96.8
+Cheyenne,WY,Wyoming,Laramie,65132,24.6
+Washington,DC,District of Columbia,District of Columbia,712816,68.3
